@@ -46,6 +46,7 @@ runs:
         KIND_CONFIG_FILE=${{ env.TEMP_DIR }}/kind.yaml
 
         WORKER_NODES=${{ inputs.worker-nodes }}
+        LABEL_PREFIX=${{ inputs.label-prefix }}
 
         if [ "$WORKER_NODES" -gt 0 ]; then
           for i in $(seq 1 $WORKER_NODES); do
