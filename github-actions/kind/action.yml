@@ -17,7 +17,7 @@ inputs:
   label-prefix:
     description: "Prefix to add to worker node labels"
     required: false
-    default: "worker"
+    default: worker
 
 runs:
   using: "composite"
